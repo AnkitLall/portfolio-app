@@ -1,228 +1,287 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, here, tesla, accenture } from '../assets/images';
 import {
-    car,
-    contact,
-    css,
-    estate,
-    express,
-    git,
-    github,
-    html,
-    javascript,
-    linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
-    react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
-    tailwindcss,
-    threads,
-    typescript
-} from "../assets/icons";
+  contact,
+  css,
+  express,
+  git,
+  github,
+  html,
+  javascript,
+  linkedin,
+  mongodb,
+  mui,
+  nodejs,
+  pricewise,
+  react,
+  redux,
+  sass,
+  tailwindcss,
+  threads,
+  typescript,
+  python,
+  java,
+  go,
+  springBoot,
+  postgresql,
+  mysql,
+  jenkins,
+  linux,
+  jira,
+  confluence,
+  terraform,
+  aws,
+  gcp,
+  docker,
+  kubernetes,
+  helm,
+} from '../assets/icons';
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+  {
+    imageUrl: python,
+    name: 'Python',
+    type: 'Backend',
+  },
+  {
+    imageUrl: javascript,
+    name: 'JavaScript',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: java,
+    name: 'Java',
+    type: 'Backend',
+  },
+  {
+    imageUrl: go,
+    name: 'GoLang',
+    type: 'Backend',
+  },
+  {
+    imageUrl: html,
+    name: 'HTML',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: css,
+    name: 'CSS',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: mui,
+    name: 'Material-UI',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: tailwindcss,
+    name: 'Tailwind CSS',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: sass,
+    name: 'Sass',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: typescript,
+    name: 'TypeScript',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: react,
+    name: 'React',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: redux,
+    name: 'Redux',
+    type: 'State Management',
+  },
+  {
+    imageUrl: nodejs,
+    name: 'Node.js',
+    type: 'Backend',
+  },
+  {
+    imageUrl: express,
+    name: 'Express',
+    type: 'Backend',
+  },
+  {
+    imageUrl: springBoot,
+    name: 'Spring Boot',
+    type: 'Backend',
+  },
+  {
+    imageUrl: mongodb,
+    name: 'MongoDB',
+    type: 'Database',
+  },
+  {
+    imageUrl: mysql,
+    name: 'MySQL',
+    type: 'Database',
+  },
+  {
+    imageUrl: postgresql,
+    name: 'PostgreSQL',
+    type: 'Database',
+  },
+  {
+    imageUrl: git,
+    name: 'Git',
+    type: 'Version Control',
+  },
+  {
+    imageUrl: github,
+    name: 'GitHub',
+    type: 'Version Control',
+  },
+  {
+    imageUrl: jenkins,
+    name: 'Jenkins',
+    type: 'Cloud',
+  },
+  {
+    imageUrl: linux,
+    name: 'Linux',
+    type: 'OS',
+  },
+  {
+    imageUrl: jira,
+    name: 'Jira',
+    type: 'Collaboration Tool',
+  },
+  {
+    imageUrl: confluence,
+    name: 'Confluence',
+    type: 'Collaboration Tool',
+  },
+  {
+    imageUrl: aws,
+    name: 'AWS',
+    type: 'Cloud',
+  },
+  {
+    imageUrl: gcp,
+    name: 'Google Cloud',
+    type: 'Cloud',
+  },
+  {
+    imageUrl: docker,
+    name: 'Docker',
+    type: 'Cloud',
+  },
+  {
+    imageUrl: kubernetes,
+    name: 'Kubernetes',
+    type: 'Cloud',
+  },
+  {
+    imageUrl: helm,
+    name: 'Helm',
+    type: 'Cloud',
+  },
+  {
+    imageUrl: terraform,
+    name: 'Terraform',
+    type: 'Cloud',
+  },
 ];
 
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+  {
+    title: 'DevOps Engineer Intern',
+    company_name: 'HERE Technologies',
+    icon: here,
+    iconBg: '#B4B6BB',
+    date: 'Jun 2023 - Sep 2023',
+    points: [
+      'Designed and implemented GKE infrastructure for data pipeline microservices, enabling the ingestion and processing of geographical data, which resulted in charting over 100 square miles of uncharted routes.',
+      'Improved documentation of resource allocation in Confluence, enhancing team collaboration and transparency.',
+      'Optimized GCP GKE cluster provisioning with Terraform, ensuring efficient resource usage and reducing costs by threefold.',
+      'Collaborated with cross-functional teams to ensure seamless integration and deployment of microservices.',
+      'Conducted regular reviews and updates to infrastructure, ensuring scalability and performance.',
+    ],
+  },
+  {
+    title: 'Team Lead/Software Engineer',
+    company_name: 'Accenture',
+    icon: accenture,
+    iconBg: '#DCC2EB',
+    date: 'Apr 2022 - Jun 2022',
+    points: [
+        "Streamlined the development process through requirement analysis and efficient application architecture design.",
+        "Utilized Jira, GitHub, and Confluence for effective project management and collaboration.",
+        "Led frontend development training sessions for employees across various domains.",
+    ],
+  },
+  {
+    title: 'Senior Software Engineer',
+    company_name: 'Accenture',
+    icon: accenture,
+    iconBg: '#DCC2EB',
+    date: 'Feb 2021 - Mar 2022',
+    points: [
+        "Developed the application layer for a search engine, leveraging Agile methodologies to ensure timely delivery and efficient teamwork.",
+        "Engineered REST APIs using NodeJS and built the UI with React and TypeScript, following Test-Driven Development (TDD) principles for high-quality code.",
+        "Enhanced React component performance through Lazy-loading and debouncing, while utilizing CSS and Material UI for a polished client interface.",
+        "Ensured robust unit testing with jest, maintaining high code coverage to minimize bugs and improve application reliability.",
+        "Conducted A/B testing to refine search filter functionality, enhancing user engagement and search accuracy.",
+        "Streamlined version control using Git, and established CI/CD pipelines with Jenkins and GitHub Actions for seamless integration and deployment."
+    ],
+  },
+  {
+    title: 'Software Engineer',
+    company_name: 'Accenture',
+    icon: accenture,
+    iconBg: '#DCC2EB',
+    date: 'Jul 2019 - Jan 2021',
+    points: [
+        "Developed a web-based Financial Reporting System for a multinational financial services firm, following Agile methodologies.",
+        "Designed and implemented UI features using React and Redux, and built report generation modules with NodeJS and Typescript.",
+        "Delivered RESTful APIs for report generation and financial statement modules using ExpressJS and Java Spring Boot.",
+        "Achieved high code coverage and reduced bugs through unit testing in React with Jest.",
+        "Employed Python, pandas, and SQLAlchemy to manage data extraction and storage in PostgreSQL.",
+        "Upgraded Docker files to efficiently manage dependencies and environment configurations for multiple applications.",
+        "Managed cloud server configurations with Nginx and set up CI/CD pipelines using Jenkins."
+    ],
+  },
 ];
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
+  {
+    name: 'Contact',
+    iconUrl: contact,
+    link: '/contact',
+  },
+  {
+    name: 'GitHub',
+    iconUrl: github,
+    link: 'https://github.com/YourGitHubUsername',
+  },
+  {
+    name: 'LinkedIn',
+    iconUrl: linkedin,
+    link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+  },
 ];
 
 export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+  {
+    iconUrl: pricewise,
+    theme: 'btn-back-red',
+    name: 'Microservices Deployment on Google Cloud Kubernetes Engine',
+    description:
+      'Deployed three microservices to GCP GKE using Kubernetes, automated infrastructure with Terraform, optimized CI/CD pipelines, and enhanced system performance with custom GoLang Kubernetes Operator, Kafka integration, and Prometheus monitoring.',
+    link: 'https://github.com/cyse7125-fall2023-group2',
+  },
+  {
+    iconUrl: threads,
+    theme: 'btn-back-green',
+    name: 'Cloud Native Deployment on AWS',
+    description:
+      'Developed secure REST APIs with Python Flask, established CI with GitHub Actions, provisioned AWS resources with Terraform, created AMIs with Packer, and ensured scalability with EC2 autoscaling and CloudWatch integration.',
+    link: 'https://github.com/orgs/AnkitLallOrganization/repositories',
+  },
 ];

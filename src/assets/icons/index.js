@@ -26,6 +26,23 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import python from './python.jpg'
+import java from './java.png'
+import go from './go.png'
+import springBoot from './spring_boot.png'
+import postgresql from './postgresql.png'
+import mysql from './mysql.png'
+import jenkins from './jenkins.png'
+import linux from './linux.png'
+import jira from './jira.jpg'
+import confluence from './confluence.webp'
+import terraform from './terraform.png'
+import aws from './aws.png'
+import gcp from './gcp.png'
+import docker from './docker.png'
+import kubernetes from './kubernetes.png'
+import helm from './helm.png'
+
 
 export {
     css,
@@ -55,5 +72,21 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    python,
+    java,
+    go,
+    springBoot,
+    postgresql,
+    mysql,
+    jenkins,
+    linux,
+    jira,
+    confluence,
+    terraform,
+    aws,
+    gcp,
+    docker,
+    kubernetes,
+    helm
 }

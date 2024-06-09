@@ -13,14 +13,16 @@ const About = () => {
       <h1 className="head-text">
         Hello, I'm{' '}
         <span className="blue-gradient_text font-semibold drop-shadow">
-          Ankit
+          Ankit{' '}
         </span>
+        👋
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Software Engineer based in United States, specializing in technical
-          education through hands-on learning and building applications.
+          Software Engineer based in the United States, specializing in building
+          and deploying enterprise-grade applications in dynamic, fast-paced
+          technology environments.
         </p>
       </div>
 
@@ -30,7 +32,7 @@ const About = () => {
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => {
             return (
-              <div className="block-container w-20 h-20">
+              <div key={skill.name} className="block-container w-20 h-20">
                 <div className="btn-back rounded-xl" />
                 <div className="btn-front rounded-xl flex justify-center items-center">
                   <img
@@ -49,20 +51,21 @@ const About = () => {
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people, Here's the rundown:
+            I've worked at multiple companies across various domains,
+            continuously honing my skills and collaborating with talented
+            professionals. Here's a rundown of my experience:
           </p>
         </div>
 
         <div className="mt-12 flex">
           <VerticalTimeline>
-            {experiences.map((experience) => {
+            {experiences.map((experience, index) => {
               return (
                 <VerticalTimelineElement
-                  key={experience.company_name}
+                  key={experience.company_name + '_' + index}
                   date={experience.date}
                   icon={
-                    <div className='flex justify-center items-center w-full h-full'>
+                    <div className="flex justify-center items-center w-full h-full">
                       <img
                         src={experience.icon}
                         alt={experience.company_name}
@@ -71,13 +74,13 @@ const About = () => {
                     </div>
                   }
                   iconStyle={{
-                    background: experience.iconBg
+                    background: experience.iconBg,
                   }}
                   contentStyle={{
                     borderBottom: '8px',
                     borderStyle: 'solid',
                     borderBottomColor: experience.iconBg,
-                    boxShadow: 'none'
+                    boxShadow: 'none',
                   }}
                 >
                   <div>
@@ -108,7 +111,7 @@ const About = () => {
         </div>
       </div>
 
-      <hr className='border-slate-200' />
+      <hr className="border-slate-200" />
       <CTA />
     </section>
   );
